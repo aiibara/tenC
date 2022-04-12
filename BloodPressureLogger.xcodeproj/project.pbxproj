@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A644C6928046FE50023B990 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A644C6828046FE50023B990 /* HistoryViewController.swift */; };
+		0A644C6B280482890023B990 /* HistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A644C6A280482890023B990 /* HistoryDetailViewController.swift */; };
+		0AE2DE7F27FF21C500C11DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DE7E27FF21C500C11DF6 /* AppDelegate.swift */; };
+		0AE2DE8127FF21C500C11DF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DE8027FF21C500C11DF6 /* SceneDelegate.swift */; };
+		0AE2DE8327FF21C500C11DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DE8227FF21C500C11DF6 /* ViewController.swift */; };
+		0AE2DE8627FF21C500C11DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2DE8427FF21C500C11DF6 /* Main.storyboard */; };
+		0AE2DE8927FF21C500C11DF6 /* BloodPressureLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DE8727FF21C500C11DF6 /* BloodPressureLogger.xcdatamodeld */; };
+		0AE2DE8B27FF21C600C11DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2DE8A27FF21C600C11DF6 /* Assets.xcassets */; };
+		0AE2DE8E27FF21C600C11DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE2DE8C27FF21C600C11DF6 /* LaunchScreen.storyboard */; };
+		0AE2DE9927FF21C700C11DF6 /* BloodPressureLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DE9827FF21C700C11DF6 /* BloodPressureLoggerTests.swift */; };
+		0AE2DEA327FF21C700C11DF6 /* BloodPressureLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DEA227FF21C700C11DF6 /* BloodPressureLoggerUITests.swift */; };
+		0AE2DEA527FF21C700C11DF6 /* BloodPressureLoggerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DEA427FF21C700C11DF6 /* BloodPressureLoggerUITestsLaunchTests.swift */; };
+		0AE2DEBC27FF441F00C11DF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DEBB27FF441F00C11DF6 /* MainTabBarController.swift */; };
+		0AE2DEBE27FF455900C11DF6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DEBD27FF455900C11DF6 /* DashboardViewController.swift */; };
+		0AE2DEC027FF4B8000C11DF6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE2DEBF27FF4B8000C11DF6 /* RegisterViewController.swift */; };
+		0AE4C4B027FFCC26000E5E52 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4C4AF27FFCC26000E5E52 /* DatePicker.swift */; };
+		0AF128A52801514700027135 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128A42801514700027135 /* CustomStepper.swift */; };
+		0AF128A72801515C00027135 /* CustomStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF128A62801515C00027135 /* CustomStepper.xib */; };
+		0AF128A9280151E600027135 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128A8280151E600027135 /* UIViewExtension.swift */; };
+		0AF128AB28016B6000027135 /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128AA28016B6000027135 /* CustomPicker.swift */; };
+		0AF128AD28016B7500027135 /* CustomPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF128AC28016B7500027135 /* CustomPicker.xib */; };
+		0AF128B328018E1C00027135 /* BPCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128B228018E1C00027135 /* BPCoreDataManager.swift */; };
+		0AF128B62801946500027135 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128B52801946500027135 /* User.swift */; };
+		0AF128BB2801E1E000027135 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128B92801E1E000027135 /* CustomTableViewCell.swift */; };
+		0AF128BC2801E1E000027135 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF128BA2801E1E000027135 /* CustomTableViewCell.xib */; };
+		0AF128BE2801E64000027135 /* BP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128BD2801E64000027135 /* BP.swift */; };
+		0AF128C12801ED2600027135 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128C02801ED2600027135 /* Helper.swift */; };
+		0AF128C5280290A600027135 /* AddBPLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128C4280290A600027135 /* AddBPLogController.swift */; };
+		0AF128CC2802981B00027135 /* BPLogs+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128CA2802981B00027135 /* BPLogs+CoreDataClass.swift */; };
+		0AF128CD2802981B00027135 /* BPLogs+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128CB2802981B00027135 /* BPLogs+CoreDataProperties.swift */; };
+		0AF128CF2802DC5D00027135 /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128CE2802DC5D00027135 /* MoodViewController.swift */; };
+		0AF128D228031C4600027135 /* Mood+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128D028031C4600027135 /* Mood+CoreDataClass.swift */; };
+		0AF128D328031C4600027135 /* Mood+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128D128031C4600027135 /* Mood+CoreDataProperties.swift */; };
+		0AF128D528031D0500027135 /* MoodCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128D428031D0500027135 /* MoodCoreDataManager.swift */; };
+		0AF128D728031D5C00027135 /* Emo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128D628031D5C00027135 /* Emo.swift */; };
+		0AF128DB2803261B00027135 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128DA2803261B00027135 /* ActivityViewController.swift */; };
+		0AF128DD2803393F00027135 /* ActivityFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128DC2803393F00027135 /* ActivityFormViewController.swift */; };
+		0AF128E028034B6700027135 /* Activity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128DE28034B6700027135 /* Activity+CoreDataClass.swift */; };
+		0AF128E128034B6700027135 /* Activity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128DF28034B6700027135 /* Activity+CoreDataProperties.swift */; };
+		0AF128E328034B8300027135 /* ActivityCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128E228034B8300027135 /* ActivityCoreDataManager.swift */; };
+		0AF128E528034C0000027135 /* Act.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF128E428034C0000027135 /* Act.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AE2DE9527FF21C700C11DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE2DE7327FF21C500C11DF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE2DE7A27FF21C500C11DF6;
+			remoteInfo = BloodPressureLogger;
+		};
+		0AE2DE9F27FF21C700C11DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AE2DE7327FF21C500C11DF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE2DE7A27FF21C500C11DF6;
+			remoteInfo = BloodPressureLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A644C6828046FE50023B990 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		0A644C6A280482890023B990 /* HistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailViewController.swift; sourceTree = "<group>"; };
+		0AE2DE7B27FF21C500C11DF6 /* BloodPressureLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodPressureLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE2DE7E27FF21C500C11DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AE2DE8027FF21C500C11DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0AE2DE8227FF21C500C11DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AE2DE8527FF21C500C11DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AE2DE8827FF21C500C11DF6 /* BloodPressureLogger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BloodPressureLogger.xcdatamodel; sourceTree = "<group>"; };
+		0AE2DE8A27FF21C600C11DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AE2DE8D27FF21C600C11DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AE2DE8F27FF21C600C11DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE2DE9427FF21C700C11DF6 /* BloodPressureLoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodPressureLoggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE2DE9827FF21C700C11DF6 /* BloodPressureLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureLoggerTests.swift; sourceTree = "<group>"; };
+		0AE2DE9E27FF21C700C11DF6 /* BloodPressureLoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodPressureLoggerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE2DEA227FF21C700C11DF6 /* BloodPressureLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureLoggerUITests.swift; sourceTree = "<group>"; };
+		0AE2DEA427FF21C700C11DF6 /* BloodPressureLoggerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureLoggerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AE2DEBB27FF441F00C11DF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0AE2DEBD27FF455900C11DF6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		0AE2DEBF27FF4B8000C11DF6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0AE4C4AF27FFCC26000E5E52 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		0AF128A42801514700027135 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		0AF128A62801515C00027135 /* CustomStepper.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomStepper.xib; sourceTree = "<group>"; };
+		0AF128A8280151E600027135 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		0AF128AA28016B6000027135 /* CustomPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
+		0AF128AC28016B7500027135 /* CustomPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPicker.xib; sourceTree = "<group>"; };
+		0AF128B228018E1C00027135 /* BPCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPCoreDataManager.swift; sourceTree = "<group>"; };
+		0AF128B52801946500027135 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0AF128B92801E1E000027135 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0AF128BA2801E1E000027135 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		0AF128BD2801E64000027135 /* BP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BP.swift; sourceTree = "<group>"; };
+		0AF128C02801ED2600027135 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0AF128C4280290A600027135 /* AddBPLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBPLogController.swift; sourceTree = "<group>"; };
+		0AF128CA2802981B00027135 /* BPLogs+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BPLogs+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0AF128CB2802981B00027135 /* BPLogs+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BPLogs+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0AF128CE2802DC5D00027135 /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		0AF128D028031C4600027135 /* Mood+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mood+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0AF128D128031C4600027135 /* Mood+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mood+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0AF128D428031D0500027135 /* MoodCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCoreDataManager.swift; sourceTree = "<group>"; };
+		0AF128D628031D5C00027135 /* Emo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emo.swift; sourceTree = "<group>"; };
+		0AF128DA2803261B00027135 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		0AF128DC2803393F00027135 /* ActivityFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFormViewController.swift; sourceTree = "<group>"; };
+		0AF128DE28034B6700027135 /* Activity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0AF128DF28034B6700027135 /* Activity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0AF128E228034B8300027135 /* ActivityCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCoreDataManager.swift; sourceTree = "<group>"; };
+		0AF128E428034C0000027135 /* Act.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AE2DE7827FF21C500C11DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE2DE9127FF21C700C11DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE2DE9B27FF21C700C11DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC726E52800AB2B005978E4 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				0AF128DE28034B6700027135 /* Activity+CoreDataClass.swift */,
+				0AF128DF28034B6700027135 /* Activity+CoreDataProperties.swift */,
+				0AF128D028031C4600027135 /* Mood+CoreDataClass.swift */,
+				0AF128D128031C4600027135 /* Mood+CoreDataProperties.swift */,
+				0AF128B228018E1C00027135 /* BPCoreDataManager.swift */,
+				0AF128CA2802981B00027135 /* BPLogs+CoreDataClass.swift */,
+				0AF128CB2802981B00027135 /* BPLogs+CoreDataProperties.swift */,
+				0AF128D428031D0500027135 /* MoodCoreDataManager.swift */,
+				0AF128E228034B8300027135 /* ActivityCoreDataManager.swift */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		0AE2DE7227FF21C500C11DF6 = {
+			isa = PBXGroup;
+			children = (
+				0AE2DE7D27FF21C500C11DF6 /* BloodPressureLogger */,
+				0AE2DE9727FF21C700C11DF6 /* BloodPressureLoggerTests */,
+				0AE2DEA127FF21C700C11DF6 /* BloodPressureLoggerUITests */,
+				0AE2DE7C27FF21C500C11DF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AE2DE7C27FF21C500C11DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2DE7B27FF21C500C11DF6 /* BloodPressureLogger.app */,
+				0AE2DE9427FF21C700C11DF6 /* BloodPressureLoggerTests.xctest */,
+				0AE2DE9E27FF21C700C11DF6 /* BloodPressureLoggerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AE2DE7D27FF21C500C11DF6 /* BloodPressureLogger */ = {
+			isa = PBXGroup;
+			children = (
+				0AF128BF2801ECD400027135 /* util */,
+				0AF128B42801944B00027135 /* model */,
+				0AC726E52800AB2B005978E4 /* coredata */,
+				0AE4C4AE27FFCB8B000E5E52 /* components */,
+				0AE2DE7E27FF21C500C11DF6 /* AppDelegate.swift */,
+				0AE2DE8027FF21C500C11DF6 /* SceneDelegate.swift */,
+				0AE2DE8227FF21C500C11DF6 /* ViewController.swift */,
+				0AE2DE8427FF21C500C11DF6 /* Main.storyboard */,
+				0AE2DE8A27FF21C600C11DF6 /* Assets.xcassets */,
+				0AE2DE8C27FF21C600C11DF6 /* LaunchScreen.storyboard */,
+				0AE2DE8F27FF21C600C11DF6 /* Info.plist */,
+				0AE2DE8727FF21C500C11DF6 /* BloodPressureLogger.xcdatamodeld */,
+				0AE2DEBB27FF441F00C11DF6 /* MainTabBarController.swift */,
+				0AE2DEBD27FF455900C11DF6 /* DashboardViewController.swift */,
+				0AE2DEBF27FF4B8000C11DF6 /* RegisterViewController.swift */,
+				0AF128C4280290A600027135 /* AddBPLogController.swift */,
+				0AF128CE2802DC5D00027135 /* MoodViewController.swift */,
+				0AF128DA2803261B00027135 /* ActivityViewController.swift */,
+				0AF128DC2803393F00027135 /* ActivityFormViewController.swift */,
+				0A644C6828046FE50023B990 /* HistoryViewController.swift */,
+				0A644C6A280482890023B990 /* HistoryDetailViewController.swift */,
+			);
+			path = BloodPressureLogger;
+			sourceTree = "<group>";
+		};
+		0AE2DE9727FF21C700C11DF6 /* BloodPressureLoggerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2DE9827FF21C700C11DF6 /* BloodPressureLoggerTests.swift */,
+			);
+			path = BloodPressureLoggerTests;
+			sourceTree = "<group>";
+		};
+		0AE2DEA127FF21C700C11DF6 /* BloodPressureLoggerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0AE2DEA227FF21C700C11DF6 /* BloodPressureLoggerUITests.swift */,
+				0AE2DEA427FF21C700C11DF6 /* BloodPressureLoggerUITestsLaunchTests.swift */,
+			);
+			path = BloodPressureLoggerUITests;
+			sourceTree = "<group>";
+		};
+		0AE4C4AE27FFCB8B000E5E52 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4C4AF27FFCC26000E5E52 /* DatePicker.swift */,
+				0AF128A42801514700027135 /* CustomStepper.swift */,
+				0AF128A62801515C00027135 /* CustomStepper.xib */,
+				0AF128A8280151E600027135 /* UIViewExtension.swift */,
+				0AF128AA28016B6000027135 /* CustomPicker.swift */,
+				0AF128AC28016B7500027135 /* CustomPicker.xib */,
+				0AF128B92801E1E000027135 /* CustomTableViewCell.swift */,
+				0AF128BA2801E1E000027135 /* CustomTableViewCell.xib */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		0AF128B42801944B00027135 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0AF128B52801946500027135 /* User.swift */,
+				0AF128BD2801E64000027135 /* BP.swift */,
+				0AF128D628031D5C00027135 /* Emo.swift */,
+				0AF128E428034C0000027135 /* Act.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0AF128BF2801ECD400027135 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				0AF128C02801ED2600027135 /* Helper.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AE2DE7A27FF21C500C11DF6 /* BloodPressureLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE2DEA827FF21C700C11DF6 /* Build configuration list for PBXNativeTarget "BloodPressureLogger" */;
+			buildPhases = (
+				0AE2DE7727FF21C500C11DF6 /* Sources */,
+				0AE2DE7827FF21C500C11DF6 /* Frameworks */,
+				0AE2DE7927FF21C500C11DF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloodPressureLogger;
+			productName = BloodPressureLogger;
+			productReference = 0AE2DE7B27FF21C500C11DF6 /* BloodPressureLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AE2DE9327FF21C700C11DF6 /* BloodPressureLoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE2DEAB27FF21C700C11DF6 /* Build configuration list for PBXNativeTarget "BloodPressureLoggerTests" */;
+			buildPhases = (
+				0AE2DE9027FF21C700C11DF6 /* Sources */,
+				0AE2DE9127FF21C700C11DF6 /* Frameworks */,
+				0AE2DE9227FF21C700C11DF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE2DE9627FF21C700C11DF6 /* PBXTargetDependency */,
+			);
+			name = BloodPressureLoggerTests;
+			productName = BloodPressureLoggerTests;
+			productReference = 0AE2DE9427FF21C700C11DF6 /* BloodPressureLoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AE2DE9D27FF21C700C11DF6 /* BloodPressureLoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AE2DEAE27FF21C700C11DF6 /* Build configuration list for PBXNativeTarget "BloodPressureLoggerUITests" */;
+			buildPhases = (
+				0AE2DE9A27FF21C700C11DF6 /* Sources */,
+				0AE2DE9B27FF21C700C11DF6 /* Frameworks */,
+				0AE2DE9C27FF21C700C11DF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AE2DEA027FF21C700C11DF6 /* PBXTargetDependency */,
+			);
+			name = BloodPressureLoggerUITests;
+			productName = BloodPressureLoggerUITests;
+			productReference = 0AE2DE9E27FF21C700C11DF6 /* BloodPressureLoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AE2DE7327FF21C500C11DF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					0AE2DE7A27FF21C500C11DF6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					0AE2DE9327FF21C700C11DF6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 0AE2DE7A27FF21C500C11DF6;
+					};
+					0AE2DE9D27FF21C700C11DF6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 0AE2DE7A27FF21C500C11DF6;
+					};
+				};
+			};
+			buildConfigurationList = 0AE2DE7627FF21C500C11DF6 /* Build configuration list for PBXProject "BloodPressureLogger" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AE2DE7227FF21C500C11DF6;
+			productRefGroup = 0AE2DE7C27FF21C500C11DF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AE2DE7A27FF21C500C11DF6 /* BloodPressureLogger */,
+				0AE2DE9327FF21C700C11DF6 /* BloodPressureLoggerTests */,
+				0AE2DE9D27FF21C700C11DF6 /* BloodPressureLoggerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AE2DE7927FF21C500C11DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF128AD28016B7500027135 /* CustomPicker.xib in Resources */,
+				0AF128A72801515C00027135 /* CustomStepper.xib in Resources */,
+				0AF128BC2801E1E000027135 /* CustomTableViewCell.xib in Resources */,
+				0AE2DE8E27FF21C600C11DF6 /* LaunchScreen.storyboard in Resources */,
+				0AE2DE8B27FF21C600C11DF6 /* Assets.xcassets in Resources */,
+				0AE2DE8627FF21C500C11DF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE2DE9227FF21C700C11DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE2DE9C27FF21C700C11DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AE2DE7727FF21C500C11DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A644C6B280482890023B990 /* HistoryDetailViewController.swift in Sources */,
+				0AF128E128034B6700027135 /* Activity+CoreDataProperties.swift in Sources */,
+				0A644C6928046FE50023B990 /* HistoryViewController.swift in Sources */,
+				0AF128A52801514700027135 /* CustomStepper.swift in Sources */,
+				0AE2DE8327FF21C500C11DF6 /* ViewController.swift in Sources */,
+				0AF128E328034B8300027135 /* ActivityCoreDataManager.swift in Sources */,
+				0AF128C5280290A600027135 /* AddBPLogController.swift in Sources */,
+				0AF128AB28016B6000027135 /* CustomPicker.swift in Sources */,
+				0AF128E028034B6700027135 /* Activity+CoreDataClass.swift in Sources */,
+				0AF128D728031D5C00027135 /* Emo.swift in Sources */,
+				0AF128D328031C4600027135 /* Mood+CoreDataProperties.swift in Sources */,
+				0AF128D228031C4600027135 /* Mood+CoreDataClass.swift in Sources */,
+				0AF128A9280151E600027135 /* UIViewExtension.swift in Sources */,
+				0AF128DD2803393F00027135 /* ActivityFormViewController.swift in Sources */,
+				0AF128DB2803261B00027135 /* ActivityViewController.swift in Sources */,
+				0AF128CF2802DC5D00027135 /* MoodViewController.swift in Sources */,
+				0AF128CD2802981B00027135 /* BPLogs+CoreDataProperties.swift in Sources */,
+				0AE2DEBE27FF455900C11DF6 /* DashboardViewController.swift in Sources */,
+				0AE2DEC027FF4B8000C11DF6 /* RegisterViewController.swift in Sources */,
+				0AE2DE7F27FF21C500C11DF6 /* AppDelegate.swift in Sources */,
+				0AF128E528034C0000027135 /* Act.swift in Sources */,
+				0AF128C12801ED2600027135 /* Helper.swift in Sources */,
+				0AF128B62801946500027135 /* User.swift in Sources */,
+				0AF128CC2802981B00027135 /* BPLogs+CoreDataClass.swift in Sources */,
+				0AF128BE2801E64000027135 /* BP.swift in Sources */,
+				0AF128D528031D0500027135 /* MoodCoreDataManager.swift in Sources */,
+				0AE2DE8927FF21C500C11DF6 /* BloodPressureLogger.xcdatamodeld in Sources */,
+				0AE2DE8127FF21C500C11DF6 /* SceneDelegate.swift in Sources */,
+				0AF128BB2801E1E000027135 /* CustomTableViewCell.swift in Sources */,
+				0AE2DEBC27FF441F00C11DF6 /* MainTabBarController.swift in Sources */,
+				0AF128B328018E1C00027135 /* BPCoreDataManager.swift in Sources */,
+				0AE4C4B027FFCC26000E5E52 /* DatePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE2DE9027FF21C700C11DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE2DE9927FF21C700C11DF6 /* BloodPressureLoggerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AE2DE9A27FF21C700C11DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE2DEA527FF21C700C11DF6 /* BloodPressureLoggerUITestsLaunchTests.swift in Sources */,
+				0AE2DEA327FF21C700C11DF6 /* BloodPressureLoggerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AE2DE9627FF21C700C11DF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE2DE7A27FF21C500C11DF6 /* BloodPressureLogger */;
+			targetProxy = 0AE2DE9527FF21C700C11DF6 /* PBXContainerItemProxy */;
+		};
+		0AE2DEA027FF21C700C11DF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE2DE7A27FF21C500C11DF6 /* BloodPressureLogger */;
+			targetProxy = 0AE2DE9F27FF21C700C11DF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AE2DE8427FF21C500C11DF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE2DE8527FF21C500C11DF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AE2DE8C27FF21C600C11DF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AE2DE8D27FF21C600C11DF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AE2DEA627FF21C700C11DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0AE2DEA727FF21C700C11DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AE2DEA927FF21C700C11DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSKBVM3X2F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloodPressureLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilb.BloodPressureLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AE2DEAA27FF21C700C11DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSKBVM3X2F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BloodPressureLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilb.BloodPressureLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0AE2DEAC27FF21C700C11DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilb.BloodPressureLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BloodPressureLogger.app/BloodPressureLogger";
+			};
+			name = Debug;
+		};
+		0AE2DEAD27FF21C700C11DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilb.BloodPressureLoggerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BloodPressureLogger.app/BloodPressureLogger";
+			};
+			name = Release;
+		};
+		0AE2DEAF27FF21C700C11DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilb.BloodPressureLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BloodPressureLogger;
+			};
+			name = Debug;
+		};
+		0AE2DEB027FF21C700C11DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilb.BloodPressureLoggerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BloodPressureLogger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE2DE7627FF21C500C11DF6 /* Build configuration list for PBXProject "BloodPressureLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE2DEA627FF21C700C11DF6 /* Debug */,
+				0AE2DEA727FF21C700C11DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE2DEA827FF21C700C11DF6 /* Build configuration list for PBXNativeTarget "BloodPressureLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE2DEA927FF21C700C11DF6 /* Debug */,
+				0AE2DEAA27FF21C700C11DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE2DEAB27FF21C700C11DF6 /* Build configuration list for PBXNativeTarget "BloodPressureLoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE2DEAC27FF21C700C11DF6 /* Debug */,
+				0AE2DEAD27FF21C700C11DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AE2DEAE27FF21C700C11DF6 /* Build configuration list for PBXNativeTarget "BloodPressureLoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AE2DEAF27FF21C700C11DF6 /* Debug */,
+				0AE2DEB027FF21C700C11DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AE2DE8727FF21C500C11DF6 /* BloodPressureLogger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AE2DE8827FF21C500C11DF6 /* BloodPressureLogger.xcdatamodel */,
+			);
+			currentVersion = 0AE2DE8827FF21C500C11DF6 /* BloodPressureLogger.xcdatamodel */;
+			path = BloodPressureLogger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0AE2DE7327FF21C500C11DF6 /* Project object */;
+}

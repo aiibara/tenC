@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomStepper" customModule="BloodPressureLogger" customModuleProvider="target">
+            <connections>
+                <outlet property="stepper" destination="Jgw-iE-kkn" id="8ec-eb-O4d"/>
+                <outlet property="stepperTextField" destination="Y5a-ou-AMZ" id="Ry8-om-nPk"/>
+                <outlet property="titleLabel" destination="hd3-z0-GXb" id="Lr7-hv-ZoH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-z0-GXb">
+                    <rect key="frame" x="0.0" y="1" width="41.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9000" translatesAutoresizingMaskIntoConstraints="NO" id="Jgw-iE-kkn">
+                    <rect key="frame" x="320" y="9" width="94" height="32"/>
+                    <connections>
+                        <action selector="onStepperValueChanged:" destination="-1" eventType="valueChanged" id="EC4-m8-7IN"/>
+                    </connections>
+                </stepper>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5a-ou-AMZ">
+                    <rect key="frame" x="255" y="8" width="55" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="EGY-1r-So4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <action selector="onStepperTextChange:" destination="-1" eventType="editingChanged" id="coA-tB-B8A"/>
+                        <action selector="onStepperTextFocus:" destination="-1" eventType="editingDidBegin" id="8sq-TJ-DIp"/>
+                        <action selector="onStepperTextUnFocus:" destination="-1" eventType="editingDidEnd" id="rf3-ru-onb"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jgw-iE-kkn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="JuN-Rp-D0j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Y5a-ou-AMZ" secondAttribute="bottom" constant="8" id="K4m-lo-KWn"/>
+                <constraint firstAttribute="trailing" secondItem="Jgw-iE-kkn" secondAttribute="trailing" id="RBi-uw-8Xw"/>
+                <constraint firstItem="Y5a-ou-AMZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="U28-2D-rDS"/>
+                <constraint firstItem="hd3-z0-GXb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WAb-SE-j7M"/>
+                <constraint firstItem="hd3-z0-GXb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="WWc-9H-Bwy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Jgw-iE-kkn" secondAttribute="bottom" constant="9" id="Wfh-kg-7my"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hd3-z0-GXb" secondAttribute="bottom" constant="1" id="anQ-8W-RiL"/>
+                <constraint firstItem="Jgw-iE-kkn" firstAttribute="leading" secondItem="Y5a-ou-AMZ" secondAttribute="trailing" constant="10" id="aoj-rz-Tg4"/>
+                <constraint firstItem="Y5a-ou-AMZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="bTb-Rh-94P"/>
+                <constraint firstItem="Jgw-iE-kkn" firstAttribute="leading" secondItem="Y5a-ou-AMZ" secondAttribute="trailing" constant="10" id="btx-fe-aKA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="90.401785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
